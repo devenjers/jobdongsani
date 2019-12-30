@@ -20,7 +20,9 @@
     // the link to your model provided by Teachable Machine export panel
     const URL = "./my_model/";
 
-    let model, webcam, labelContainer, maxPredictions;
+    let model, webcam, labelContainer, maxPredictions, labelPredicted;
+
+    const labels = ["셀렉토 아야르자","셀렉토 블렌드","타미 아아","타미 뜨아","컴포즈 뜨아"];
 
     // Load the image model and setup the webcam
     async function init() {
@@ -47,6 +49,8 @@
         for (let i = 0; i < maxPredictions; i++) { // and class labels
             labelContainer.appendChild(document.createElement("div"));
         }
+        let divResult = document.createElement("div");
+        labelPredicted = labelContainer.appendChild(divResult);
     }
 
     async function loop() {
@@ -58,11 +62,24 @@
     // run the webcam image through the image model
     async function predict() {
         // predict can take in an image, video or canvas html element
+        let detected = false;
+
         const prediction = await model.predict(webcam.canvas);
         for (let i = 0; i < maxPredictions; i++) {
             const classPrediction =
                 prediction[i].className + ": " + prediction[i].probability.toFixed(2);
             labelContainer.childNodes[i].innerHTML = classPrediction;
+
+            if(prediction[i].probability.toFixed(2) >= 0.90){
+                const msg = "<pre><br>\t이거다!! " + labels[i] + "</pre>";
+                labelPredicted.innerHTML = msg;
+
+                detected = true;
+            }
+        }
+        if(!detected){
+            const msg = "<pre><br>\t뭘까?</pre>";
+            labelPredicted.innerHTML = msg;
         }
     }
 </script>
