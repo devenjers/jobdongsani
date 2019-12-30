@@ -3,3 +3,10 @@
 1. 구디(도사 인근) 커피의 테이크아웃 잔을 카메라로 인식
 
 2. 커피의 가격과 커피집의 위치를 표시
+
+
+* 참고
+https://www.youtube.com/watch?v=USQGTW34lO8&list=PLn7RPChRgtVhaq0poA0qyZAlVto4w0P1z&index=2&t=0s
+
+* Teachable Machine 2.0 공식 홈페이지
+https://teachablemachine.withgoogle.com/
