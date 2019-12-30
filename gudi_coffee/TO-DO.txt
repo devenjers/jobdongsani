@@ -26,6 +26,7 @@ https://teachablemachine.withgoogle.com/
 
 * 무료 웹페이지 deploy 사이트
 https://app.netlify.com/
+https://app.netlify.com/sites/quizzical-bell-fa9fa4/overview
 
 * deploy 된 URL
 https://quizzical-bell-fa9fa4.netlify.com
