@@ -10,3 +10,9 @@ https://www.youtube.com/watch?v=USQGTW34lO8&list=PLn7RPChRgtVhaq0poA0qyZAlVto4w0
 
 * Teachable Machine 2.0 공식 홈페이지
 https://teachablemachine.withgoogle.com/
+
+* 무료 웹페이지 deploy 사이트
+https://app.netlify.com/
+
+* deploy 된 URL
+https://quizzical-bell-fa9fa4.netlify.com
