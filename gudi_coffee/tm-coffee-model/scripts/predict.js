@@ -62,6 +62,11 @@ async function predict() {
             labelPredicted.innerHTML = msg;
 
             detected = true;
+
+            if(mapIndex != i){
+                mapIndex = i;
+                panTo(pos[i].y, pos[i].x);
+            }
         }
     }
     if(!detected){
