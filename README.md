@@ -1,5 +1,8 @@
 # jobdongsani
-donggri's job dong sa ni !
+
+Everyone's job dong sa ni !
+
+Anyone can commit anywhere !
 
 
 [License](LICENSE)
