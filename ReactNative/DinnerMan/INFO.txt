@@ -1,0 +1,17 @@
+﻿# DinnerMan ?
+
+	새하컴즈 저녁식사 매니저 !
+
+
+
+# 플랫폼
+
+1. Hosting : GCP 무료 호스팅
+https://blog.naver.com/msjang4/221318463468
+
+2. Back-End : React or React Native
+  + React Native로 가능하다면 하고, 아니면 React?
+  + 백엔드는 어떤식으로 해야하는지 모르겠음. 댓글점
+
+3. Front-End : React Native
+  + Android, iOS cross build
