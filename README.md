@@ -5,7 +5,7 @@ Everyone's job dong sa ni !
 Anyone can commit anywhere !
 
 
-[License](LICENSE)
+[License.txt](LICENSE)
 ------------------
 
 The MIT License (MIT)
