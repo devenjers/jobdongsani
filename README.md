@@ -9,5 +9,3 @@ Anyone can commit anywhere !
 ------------------
 
 The MIT License (MIT)
-
-Copyright (c) 2019 donggriman
