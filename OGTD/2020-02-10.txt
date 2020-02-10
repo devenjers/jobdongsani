@@ -14,7 +14,7 @@ zols :
 
 
 
-cyc : 
+cyc : 노트북에 설치한 pytorch cpu로 강화학습 예제 하나 공부하기
 
 
 
