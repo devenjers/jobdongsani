@@ -1,0 +1,25 @@
+﻿// 설치된 앱 목록 가져오기
+ArrayList<String> apps = new ArrayList<String>();
+List<PackageInfo> pack = getPackageManager().getInstalledPackages(0);
+for(int i = 0; i < pack.size(); i++){
+    apps.add(pack.get(i).packageName);
+}
+ 
+// 패키지명을 이용해 아이콘 가져오기
+Drawable App_icon = getPackageManager().getApplicationIcon("App_packageName");
+ 
+// 패키지명을 이용해 앱 이름 가져오기
+try{
+String App_name = getPackageManager().getApplicationLabel
+        (getPackageManager().getApplicationInfo
+        ("App_packageName",PackageManager.GET_UNINSTALLED_PACKAGES))
+        .toString();
+} catch (NameNotFoundException e) {}
+
+
+
+List<ApplicationInfo> installedAppList 
+    = PackageManager mPm.getInstalledApplications(PackageManager.GET_UNINSTALLED_PACKAGES);
+for(ApplicationInfo aInfo : installedAppList) {
+	Log.d("TEST", "Name : " + aInfo.className + "  ResID : " + aInfo.icon);
+}
