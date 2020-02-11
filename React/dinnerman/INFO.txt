@@ -1,0 +1,13 @@
+﻿# DinnerMan ?
+
+	새하컴즈 저녁식사 매니저 !
+
+
+
+# 플랫폼
+
+1. Hosting : GCP 무료 호스팅
+https://blog.naver.com/msjang4/221318463468
+
+2. Front-end : React
+
